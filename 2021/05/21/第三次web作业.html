@@ -1,0 +1,257 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>第三次web作业</title>
+  <link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <script >
+    function changeImage(photoFile) {
+    $("#myphoto1").attr('src', photoFile);
+}
+    /* 切换图片函数结尾 */
+ /* 按钮事件函数开头 */
+function myFunction() {
+    var number = document.getElementById("myText").value;
+    if (number == '2')
+        changeImage("/assets/images/22.jpg");
+    else if (number == '3')
+        changeImage("/assets/images/33.jpg");
+    else if (number == '4')
+        changeImage("/assets/images/44.jpg");
+    else 
+        changeImage("/assets/images/11.png");
+
+}
+  </script>
+</head>
+
+<body>
+  <div data-role="page" id="pageone" style="height: 100%; background-image: url(https://img.zcool.cn/community/013af45ec10d2da8012072005157d3.jpg@1280w_1l_2o_100sh.jpg);">
+  <div data-role="header" id="haha" style="height: 80px;text-align: center;background-image:url(/assets/images/banner.png); background-size: 100% 80px;">
+  </div>
+  
+  <div data-role="main" class="ui-content">
+  <div data-role="navbar" class="f1">
+<ul>
+    
+      <li><a href="/" >Home</a></li>
+    
+      <li><a href="/about.html" >About</a></li>
+    
+      <li><a href="/test.html" >Test</a></li>
+    
+      <li><a href="/blog.html" >Blog</a></li>
+    
+      <li><a href="/staff.html" >Staff</a></li>
+    
+</ul>
+</div>
+  <h1>第三次web作业</h1>
+
+<p>
+  21 May 2021
+  
+  
+</p>
+
+<h1 id="web应用软件开发实训-第三次作业-git使用">WEB应用软件开发实训-第三次作业-Git使用</h1>
+
+<p>learngit 的项目网址为：<a href="https://github.com/llz-lailizhen/llz-lailizhen.github.io/learngit">https://github.com/llz-lailizhen/llz-lailizhen.github.io/learngit</a></p>
+
+<p>公网地址：<a href="https://llz-lailizhen.github.io">https://llz-lailizhen.github.io</a></p>
+
+<h2 id="一必做部分">一、必做部分</h2>
+<h3 id="1安装git">1.安装Git</h3>
+<h4 id="已经安装过">已经安装过</h4>
+<p><img src="/assets/images/1.1.png" alt="" /></p>
+
+<h3 id="2-创建版本库">2. 创建版本库</h3>
+<h4 id="创建后的初始化">创建后的初始化</h4>
+<p><img src="/assets/images/2.1.png" alt="" /></p>
+<h4 id="创建readmetxt文件">创建readme.txt文件</h4>
+<p><img src="/assets/images/2.2.png" alt="" /></p>
+<h4 id="把文件提交git-addgit-commit到仓库">把文件提交git add+git commit到仓库</h4>
+<p><img src="/assets/images/2.3.png" alt="" /></p>
+
+<h3 id="3-版本控制">3. 版本控制</h3>
+<h4 id="修改readmetxt后查看状态">修改readme.txt后查看状态</h4>
+<p><img src="/assets/images/3.1.png" alt="" /></p>
+<h4 id="查看不同">查看不同</h4>
+<p><img src="/assets/images/3.2.png" alt="" /></p>
+<h4 id="git-add之后查看状态">Git add之后查看状态</h4>
+<p><img src="/assets/images/3.3.png" alt="" /></p>
+<h4 id="提交之后">提交之后</h4>
+<p><img src="/assets/images/3.4.png" alt="" /></p>
+<h4 id="再次查看状态">再次查看状态</h4>
+<p><img src="/assets/images/3.5.png" alt="" /></p>
+
+<h3 id="4-版本回退">4. 版本回退</h3>
+<h4 id="第三次修改提交后用git-log-查看版本记录">第三次修改提交后用Git log 查看版本记录</h4>
+<p><img src="/assets/images/4.1.png" alt="" /></p>
+<h4 id="回退版本并查看内容">回退版本并查看内容</h4>
+<p><img src="/assets/images/4.2.png" alt="" /></p>
+<h4 id="回退后再次查看版本">回退后再次查看版本</h4>
+<p><img src="/assets/images/4.3.png" alt="" /></p>
+<h4 id="回到最新的版本">回到最新的版本</h4>
+<p><img src="/assets/images/4.4.png" alt="" /></p>
+<h4 id="查看命令记录">查看命令记录</h4>
+<p><img src="/assets/images/4.5.png" alt="" /></p>
+
+<h3 id="5-工作区和暂存区">5. 工作区和暂存区</h3>
+<h4 id="增加license文本文件和修改readmetxt之后查看状态">增加LICENSE文本文件和修改readme.txt之后查看状态</h4>
+<p><img src="/assets/images/5.1.png" alt="" /></p>
+<h4 id="提交后查看状态">提交后查看状态</h4>
+<p><img src="/assets/images/5.2.png" alt="" /></p>
+<h4 id="git-commit-之后">Git commit 之后</h4>
+<p><img src="/assets/images/5.3.png" alt="" /></p>
+
+<h3 id="6-管理修改">6. 管理修改</h3>
+<h4 id="readmetxt修改增加一行之后查看情况">readme.txt修改增加一行之后，查看情况</h4>
+<p><img src="/assets/images/6.1.png" alt="" /></p>
+<h4 id="再次修改readmetxt后直接git-commit之后查看状态">再次修改readme.txt后直接git commit之后查看状态</h4>
+<p><img src="/assets/images/6.2.png" alt="" /></p>
+<h4 id="查看不同-1">查看不同</h4>
+<p><img src="/assets/images/6.3.png" alt="" /></p>
+
+<h3 id="7撤销修改">7.撤销修改</h3>
+<h4 id="错误的修改readmetxt-后查看状态">错误的修改readme.txt 后查看状态</h4>
+<p><img src="/assets/images/7.1.png" alt="" /></p>
+<h4 id="复原之后查看内容">复原之后查看内容</h4>
+<p><img src="/assets/images/7.2.png" alt="" /></p>
+<h4 id="readmetxt错误修改并git-add之后查看状态">readme.txt错误修改并Git add之后查看状态</h4>
+<p><img src="/assets/images/7.3.png" alt="" /></p>
+<h4 id="从暂存区撤回并查看状态">从暂存区撤回并查看状态</h4>
+<p><img src="/assets/images/7.4.png" alt="" /></p>
+<h4 id="丢弃修改并查看状态">丢弃修改并查看状态</h4>
+<p><img src="/assets/images/7.5.png" alt="" /></p>
+
+<h3 id="8删除文件">8.删除文件</h3>
+<h4 id="添加testtxt并提交后-删除该文件并查看状态">添加test.txt并提交后 删除该文件并查看状态</h4>
+<p><img src="/assets/images/8.1.png" alt="" /></p>
+<h4 id="确实删除之后">确实删除之后</h4>
+<p><img src="/assets/images/8.2.png" alt="" /></p>
+
+<h3 id="9远程仓库">9.远程仓库</h3>
+<h4 id="本地文件">本地文件</h4>
+<p><img src="/assets/images/9.1.png" alt="" /></p>
+<h4 id="已添加">已添加</h4>
+<p><img src="/assets/images/9.2.png" alt="" /></p>
+
+<h3 id="10添加到远程仓库">10.添加到远程仓库</h3>
+<h4 id="创建好的远程仓库">创建好的远程仓库</h4>
+<p><img src="/assets/images/10.1.png" alt="" /></p>
+<h4 id="关联远程仓库并且push本地仓库">关联远程仓库，并且push本地仓库</h4>
+<p><img src="/assets/images/10.2.png" alt="" /></p>
+<h4 id="远程仓库同步本地">远程仓库同步本地</h4>
+<p><img src="/assets/images/10.3.png" alt="" /></p>
+<h4 id="查看远程仓库并解除关联">查看远程仓库并解除关联</h4>
+<p><img src="/assets/images/10.4.png" alt="" /></p>
+
+<h3 id="11从远程仓库克隆">11.从远程仓库克隆</h3>
+<h4 id="创建好的新仓库">创建好的新仓库</h4>
+<p><img src="/assets/images/11.1.png" alt="" /></p>
+<h4 id="克隆">克隆</h4>
+<p><img src="/assets/images/11.2.png" alt="" /></p>
+<h4 id="查看本地">查看本地</h4>
+<p><img src="/assets/images/11.3.png" alt="" /></p>
+
+<h2 id="二选做部分">二、选做部分</h2>
+<h3 id="一分支管理">（一）分支管理</h3>
+<h4 id="1创建与合并分支">1.创建与合并分支</h4>
+<h4 id="2解决冲突">2.解决冲突</h4>
+<h4 id="3分支管理策略">3.分支管理策略</h4>
+<h4 id="4feature分支">4.Feature分支</h4>
+<h4 id="5多人协作">5.多人协作</h4>
+<h5 id="1">1</h5>
+<p><img src="/assets/images/21.1.png" alt="" /></p>
+<h5 id="2">2</h5>
+<p><img src="/assets/images/21.2.png" alt="" /></p>
+<h5 id="3">3</h5>
+<p><img src="/assets/images/21.3.png" alt="" /></p>
+<h5 id="4">4</h5>
+<p><img src="/assets/images/21.4.png" alt="" /></p>
+<h5 id="5">5</h5>
+<p><img src="/assets/images/21.5.png" alt="" /></p>
+<h5 id="6">6</h5>
+<p><img src="/assets/images/21.6.png" alt="" /></p>
+<h5 id="7">7</h5>
+<p><img src="/assets/images/21.7.png" alt="" /></p>
+<h3 id="二标签管理">（二）标签管理</h3>
+<h4 id="1创建标签">1.创建标签</h4>
+<h4 id="2操作标签">2.操作标签</h4>
+<h5 id="1-1">1</h5>
+<p><img src="/assets/images/22.1.png" alt="" /></p>
+<h5 id="2-1">2</h5>
+<p><img src="/assets/images/22.2.png" alt="" /></p>
+<h5 id="3-1">3</h5>
+<p><img src="/assets/images/22.3.png" alt="" /></p>
+<h5 id="4-1">4</h5>
+<p><img src="/assets/images/22.4.png" alt="" /></p>
+<h5 id="5-1">5</h5>
+<p><img src="/assets/images/22.5.png" alt="" /></p>
+<h5 id="6-1">6</h5>
+<p><img src="/assets/images/22.6.png" alt="" /></p>
+<h5 id="7-1">7</h5>
+<p><img src="/assets/images/22.7.png" alt="" /></p>
+
+<h3 id="三使用gitee">（三）使用Gitee</h3>
+<h4 id="1giteessh公钥">1.GiteeSSH公钥</h4>
+<h5 id="添加公匙">添加公匙</h5>
+<p><img src="/assets/images/23.1.png" alt="" /></p>
+<h5 id="创建库">创建库</h5>
+<p><img src="/assets/images/23.2.png" alt="" /></p>
+<h4 id="2推送到gitee远程仓库">2.推送到Gitee远程仓库</h4>
+<h5 id="连接并上传本地仓库">连接并上传本地仓库</h5>
+<p><img src="/assets/images/23.3.png" alt="" /></p>
+<h4 id="3本地库同时与两个远程库互相同步">3.本地库同时与两个远程库互相同步</h4>
+<h5 id="查看关联信息">查看关联信息</h5>
+<p><img src="/assets/images/23.4.png" alt="" /></p>
+<h5 id="同时关联github和gitee">同时关联github和gitee</h5>
+<p><img src="/assets/images/23.5.png" alt="" /></p>
+
+<h2 id="三实验过程">三、实验过程</h2>
+<p>1、首先安装git，然后在本地创建learngit文件夹，并cd转到learngit目录下。然后用git init初始化该仓库，为git可管理的仓库。</p>
+
+<p>2、然后在learngit中创建readme.txt文件，每次修改内容，用git add readme.txt将文件交的暂存区stage</p>
+
+<p>3、然后用git commit将暂存区的文件提交到分支。用git status查看文件状态。</p>
+
+<p>4、用git log 查看多次提交的版本记录，用git reset –hard HEAD^回退到上一个版本，用git reset –hard版本号 回到指定版本。</p>
+
+<p>5、用git restore – readme.txt 撤销掉修改。</p>
+
+<p>6、删除文件，则用rm test.txt  删除我添加并提交的文件的，再用git rm test.txt来确认删除，并git commit 提交一个版本。</p>
+
+<p>7、在github上登陆我的账户并创建了一个learngit远程仓库，根据github上网页的提示，在本地用git remote add origin https: //github. com/llz-lailizhen/learngit.git  git branch -M main命令，将本地仓库与远程仓库连接起来。再用git push -u origin main 将当前分支推送到远程仓库。</p>
+
+<p>8、在github上创建一个带readme.md文件的仓库gitskils，然后克隆出一个本地库。</p>
+
+<h2 id="四总结">四、总结</h2>
+<p>一、遇到的问题
+1、直接用git add git commit等语句会发现提示我  Permission denied(没有权限)，要在这些语句前都加上sudo 第一次还需要输入我的密码。</p>
+
+<p>2、教程上说git checkout –<filename> 来撤回修改，实际发现不行，根据终端提示应该是，git restore -- <filename>才能撤回，可能是教程使用的WSL终端和我们版本不一致。</filename></filename></p>
+
+<p>3、教程上说上git remote add origin git@github.com:llz-lailizhen /learngit.git 语句用来关联远程仓库，实际会报错，而github网站上有提示操作，按网站上提示的git remote add origin https://github.com/llz-lailizhen/learngit.git 语句就成功了。后面的克隆语句也是类似的问题，教程报错，按网站提示的正确。</p>
+
+<p>4、教程上说git push -u origin master 来将本地的库推送到远程仓库，但是报错，根据网上搜索GitHub 从2020年 10 月 1 日起，在该平台上创建的所有新的源代码仓库将默认被命名为 “main”，而不是原先的”master”，所以用git push -u origin main才能成功。这些都是教程出现的不适应当前版本。</p>
+
+<p>5、学到了git add一次只能提交一个文件到暂存区，git commit一次会将所有文件暂存区提交到分支中</p>
+
+<p>二、实验心得体会
+学会了如果使用Git以及相关的一系列操作，感受到了Git的魅力，Git是一种高效便捷的版本控制系统，熟练掌握Git，对以后的项目开发工作十分重要。如果想熟练运用git命令，一定要结合实际情况多加练习，希望能在以后的使用中多多熟悉。</p>
+
+  
+  </div>
+  <div data-role="footer" data-position="fixed"  style="height: 40px;font-size:8px;font-weight:100;color:white;text-align: center; background-color: #ff2c0f">
+    Copyright © 2021.7 WEB实训-02班-第一小组 版权所有 未经授权，请勿转载  赖丽珍、姚沛宏、符瑶、曾程设计开发 Stat.By 站长统计
+
+  </div>
+  </div>
+</body>
+
+</html>

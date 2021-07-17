@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>Staff</title>
+  <link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <script >
+    function changeImage(photoFile) {
+    $("#myphoto1").attr('src', photoFile);
+}
+    /* 切换图片函数结尾 */
+ /* 按钮事件函数开头 */
+function myFunction() {
+    var number = document.getElementById("myText").value;
+    if (number == '2')
+        changeImage("/assets/images/22.jpg");
+    else if (number == '3')
+        changeImage("/assets/images/33.jpg");
+    else if (number == '4')
+        changeImage("/assets/images/44.jpg");
+    else 
+        changeImage("/assets/images/11.png");
+
+}
+  </script>
+</head>
+
+<body>
+  <div data-role="page" id="pageone" style="height: 100%; background-image: url(https://img.zcool.cn/community/013af45ec10d2da8012072005157d3.jpg@1280w_1l_2o_100sh.jpg);">
+  <div data-role="header" id="haha" style="height: 80px;text-align: center;background-image:url(/assets/images/banner.png); background-size: 100% 80px;">
+  </div>
+  
+  <div data-role="main" class="ui-content">
+  <div data-role="navbar" class="f1">
+<ul>
+    
+      <li><a href="/" >Home</a></li>
+    
+      <li><a href="/about.html" >About</a></li>
+    
+      <li><a href="/test.html" >Test</a></li>
+    
+      <li><a href="/blog.html" >Blog</a></li>
+    
+      <li><a href="/staff.html" class="current">Staff</a></li>
+    
+</ul>
+</div>
+  <h1>Staff</h1>
+
+<ul>
+  
+    <li>
+        <h2><a href="/authors/%E5%A7%9A%E6%B2%9B%E5%AE%8F.html">姚沛宏</a></h2>
+      <h3>Writer</h3>
+      <p><p>姚沛宏 is a computer major at the School of Information, Yunnan University, and is currently doing web homework.</p>
+</p>
+    </li>
+  
+    <li>
+        <h2><a href="/authors/%E6%9B%BE%E7%A8%8B.html">赖丽珍</a></h2>
+      <h3>Chief Editor</h3>
+      <p><p>Lai Lizhen is a computer major at the School of Information, Yunnan University, and is currently doing web homework.</p>
+</p>
+    </li>
+  
+    <li>
+        <h2><a href="/authors/%E7%AC%A6%E7%91%B6.html">符瑶</a></h2>
+      <h3>Writer</h3>
+      <p><p>符瑶 is a computer major at the School of Information, Yunnan University, and is currently doing web homework.</p>
+</p>
+    </li>
+  
+    <li>
+        <h2><a href="/authors/%E8%B5%96%E4%B8%BD%E7%8F%8D.html">赖丽珍</a></h2>
+      <h3>Writer</h3>
+      <p><p>赖丽珍 is a computer major at the School of Information, Yunnan University, and is currently doing web homework.</p>
+</p>
+    </li>
+  
+</ul>
+  
+  </div>
+  <div data-role="footer" data-position="fixed"  style="height: 40px;font-size:8px;font-weight:100;color:white;text-align: center; background-color: #ff2c0f">
+    Copyright © 2021.7 WEB实训-02班-第一小组 版权所有 未经授权，请勿转载  赖丽珍、姚沛宏、符瑶、曾程设计开发 Stat.By 站长统计
+
+  </div>
+  </div>
+</body>
+
+</html>

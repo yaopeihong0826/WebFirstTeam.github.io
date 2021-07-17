@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>Markdown表格</title>
+  <link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <script >
+    function changeImage(photoFile) {
+    $("#myphoto1").attr('src', photoFile);
+}
+    /* 切换图片函数结尾 */
+ /* 按钮事件函数开头 */
+function myFunction() {
+    var number = document.getElementById("myText").value;
+    if (number == '2')
+        changeImage("/assets/images/22.jpg");
+    else if (number == '3')
+        changeImage("/assets/images/33.jpg");
+    else if (number == '4')
+        changeImage("/assets/images/44.jpg");
+    else 
+        changeImage("/assets/images/11.png");
+
+}
+  </script>
+</head>
+
+<body>
+  <div data-role="page" id="pageone" style="height: 100%; background-image: url(https://img.zcool.cn/community/013af45ec10d2da8012072005157d3.jpg@1280w_1l_2o_100sh.jpg);">
+  <div data-role="header" id="haha" style="height: 80px;text-align: center;background-image:url(/assets/images/banner.png); background-size: 100% 80px;">
+  </div>
+  
+  <div data-role="main" class="ui-content">
+  <div data-role="navbar" class="f1">
+<ul>
+    
+      <li><a href="/" >Home</a></li>
+    
+      <li><a href="/about.html" >About</a></li>
+    
+      <li><a href="/test.html" >Test</a></li>
+    
+      <li><a href="/blog.html" >Blog</a></li>
+    
+      <li><a href="/staff.html" >Staff</a></li>
+    
+</ul>
+</div>
+  <h1>Markdown表格</h1>
+
+<p>
+  08 May 2021
+  
+  
+</p>
+
+<ul>
+  <li>第九项
+Markdown 表格</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Markdown 制作表格使用</td>
+      <td>来分隔不同的单元格，使用 - 来分隔表头和其他行。</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>语法格式如下：</p>
+
+<p>|  表头   | 表头  |
+|  —-  | —-  |
+| 单元格  | 单元格 |
+| 单元格  | 单元格 |
+以上代码显示结果如下：</p>
+
+<p>对齐方式</p>
+
+<p>我们可以设置表格的对齐方式：</p>
+
+<p>-: 设置内容和标题栏居右对齐。
+:- 设置内容和标题栏居左对齐。
+:-: 设置内容和标题栏居中对齐。
+实例如下：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">左对齐</th>
+      <th style="text-align: right">右对齐</th>
+      <th style="text-align: center">居中对齐</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">单元格</td>
+      <td style="text-align: right">单元格</td>
+      <td style="text-align: center">单元格</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">单元格</td>
+      <td style="text-align: right">单元格</td>
+      <td style="text-align: center">单元格</td>
+    </tr>
+  </tbody>
+</table>
+
+  
+  </div>
+  <div data-role="footer" data-position="fixed"  style="height: 40px;font-size:8px;font-weight:100;color:white;text-align: center; background-color: #ff2c0f">
+    Copyright © 2021.7 WEB实训-02班-第一小组 版权所有 未经授权，请勿转载  赖丽珍、姚沛宏、符瑶、曾程设计开发 Stat.By 站长统计
+
+  </div>
+  </div>
+</body>
+
+</html>
